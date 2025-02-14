@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package repositoriogit;
+
+import java.util.Scanner;
 
 /**
  *
@@ -11,12 +9,20 @@ package repositoriogit;
 public class RepositorioGit
 {
 
-	/**
-	 * @param args the command line arguments
-	 */
+	Scanner entrada = new Scanner(System.in);
+	String mensaje;
+
+	public void Mensajer()
+	{
+		mensaje = entrada.nextLine();
+		System.out.println("El mensaje es: " + mensaje);
+	}
+
 	public static void main(String[] args)
 	{
-		System.out.println("Hola mundo!!");
+
+		RepositorioGit ejemplo = new RepositorioGit();
+		ejemplo.Mensajer();
 	}
-	
+
 }
